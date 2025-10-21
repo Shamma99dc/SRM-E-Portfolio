@@ -1,0 +1,118 @@
+🧪 Branch 4: Coding and Outputs
+
+This branch demonstrates my ability to apply coding skills in the context of security risk management, including simulations, automation, and visualisation of risk-based decisions using Python. The goal was to show how basic coding enhances analysis and risk mitigation practices.
+
+📊 1. Threat Detection Heatmap Simulation
+✅ Scenario:
+
+Create a heatmap to show risk severity across departments based on a scoring system of impact and likelihood.
+
+💻 Python Code:
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Risk matrix - Likelihood (rows) x Impact (columns)
+risk_data = np.array([[1, 2, 3],
+                      [2, 3, 4],
+                      [3, 4, 5]])
+
+labels = ['Low', 'Medium', 'High']
+
+plt.figure(figsize=(6, 4))
+sns.heatmap(risk_data, annot=True, fmt="d", xticklabels=labels, yticklabels=labels, cmap="YlOrRd")
+plt.title("🔥 Risk Heatmap")
+plt.xlabel("Impact")
+plt.ylabel("Likelihood")
+plt.show()
+
+📷 Output:
+
+
+A simulated heatmap illustrating relative risk exposure
+
+🔐 2. Basic Python Tool – Insider Threat Activity Detector
+✅ Scenario:
+
+Check employee login times and flag unusual login hours (e.g., midnight activity).
+
+💻 Python Code:
+def check_login_time(login_hour):
+    if login_hour < 6 or login_hour > 22:
+        return "⚠️ Suspicious activity"
+    else:
+        return "✅ Normal login"
+
+# Example logins
+logins = [23, 3, 14, 9, 1]
+for hour in logins:
+    print(f"Login at {hour}:00 -> {check_login_time(hour)}")
+
+📷 Output:
+Login at 23:00 -> ⚠️ Suspicious activity  
+Login at 3:00 -> ⚠️ Suspicious activity  
+Login at 14:00 -> ✅ Normal login  
+Login at 9:00 -> ✅ Normal login  
+Login at 1:00 -> ⚠️ Suspicious activity  
+
+📈 3. Risk Prioritisation Bubble Chart
+✅ Scenario:
+
+Display threats based on impact, likelihood, and frequency in one visual.
+
+💻 Python Code:
+import matplotlib.pyplot as plt
+
+# Risk items (example)
+threats = ['Phishing', 'Insider Threat', 'DDoS', 'Data Leak']
+impact = [8, 7, 6, 9]
+likelihood = [5, 6, 4, 8]
+frequency = [50, 40, 30, 70]  # Bubble size
+
+plt.scatter(impact, likelihood, s=frequency, alpha=0.6, c='red')
+for i, threat in enumerate(threats):
+    plt.text(impact[i], likelihood[i], threat)
+
+plt.xlabel('Impact (1–10)')
+plt.ylabel('Likelihood (1–10)')
+plt.title('🧪 Risk Prioritisation Bubble Chart')
+plt.grid(True)
+plt.show()
+
+📷 Output:
+
+
+Visualising how frequent and severe threats are ranked
+
+🧠 4. ISO/IEC 27005 Risk Calculation Logic
+✅ Scenario:
+
+Using Python to automate risk score calculation from ISO risk formula.
+
+💻 Python Code:
+def calculate_risk_score(likelihood, impact):
+    return likelihood * impact
+
+# Example threats
+threats = {
+    "Phishing": (3, 7),
+    "Data Breach": (5, 9),
+    "Insider Misuse": (4, 6)
+}
+
+for threat, values in threats.items():
+    score = calculate_risk_score(*values)
+    print(f"{threat} Risk Score: {score}")
+
+📷 Output:
+Phishing Risk Score: 21  
+Data Breach Risk Score: 45  
+Insider Misuse Risk Score: 24  
+
+🛠️ 5. Future Improvements (Planned)
+
+Add log file scanning using Python re module to detect anomalies.
+
+Use matplotlib to show risk trend over time.
+
+Build a Tkinter GUI for visual selection of risks per department.
