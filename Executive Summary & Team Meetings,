@@ -1,0 +1,98 @@
+Executive Summary & Team Meetings
+
+This branch showcases the collaborative and individual effort that went into producing the Executive Summary and the development team activities. It includes examples from our meetings, decision-making flow, peer inputs, and risk prioritisation processes documented across the module.
+
+📝 1. Executive Summary – Purpose and Outcome
+
+📌 What: The Executive Summary synthesised the risk modelling results for Pampered Pets Ltd and presented an actionable Disaster Recovery Plan with risk matrices, GDPR compliance checks, and mitigation proposals.
+
+📎 Tool Used: Microsoft Word, supported by ISO 27005, GDPR, and NIST frameworks.
+
+✅ Core Deliverables:
+
+High-level risk scoring system
+
+Asset-threat mapping
+
+Disaster Recovery Plan within 1-minute failover
+
+Recommendations prioritised by business impact
+
+📂 Excerpt:
+
+"The simulation showed that integrating employee training, data encryption, and automated failover services would reduce operational risk by 42%..."
+
+🧠 Learning Point: Writing this summary helped consolidate my understanding of how cybersecurity risk must align with business continuity expectations and legal obligations like GDPR.
+
+🤝 2. Team Meeting Dynamics
+
+🔍 What: We conducted structured Zoom meetings (3 in total) to assign roles, brainstorm risks, and review threat models collaboratively.
+
+🗂️ Example Timeline:
+
+Meeting #	Focus Area	Outcome
+1	Scoping risks & assigning tasks	Created stakeholder matrix, asset map
+2	Finalising risk scenarios & inputs	Drafted preliminary DRP and threat trees
+3	Peer review & editing executive draft	Improved structure, added mitigation tables
+
+📌 My Role: I led the documentation, recorded meeting minutes, and created initial drafts for the peer-reviewed risk charts.
+
+🧠 Learning Point: These meetings reinforced my ability to collaborate remotely, assign roles effectively, and communicate risk in business language.
+
+🧑‍🤝‍🧑 3. Peer Feedback and Integration
+
+📋 Tool Used: Peer Evaluation Template
+
+🟢 What Went Well:
+
+Clear task allocation
+
+On-time contributions
+
+Effective use of Google Docs for collaborative writing
+
+🔴 Challenges:
+
+Scheduling across different time zones
+
+Balancing writing tasks with coding duties
+
+📍 Action Taken:
+I scheduled reminders, created shared documents with clear headers for input, and ensured version tracking through document history.
+
+🔄 4. Key Risk Decision Example
+
+📌 Scenario: Whether to implement basic 2FA or invest in biometric authentication
+
+🗳️ Meeting Vote Result:
+
+2FA: 3 votes (cost-effective, easy rollout)
+
+Biometrics: 2 votes (better security, high cost)
+
+🔁 Decision: Go with 2FA, with a roadmap to biometrics in future phases
+
+📬 Reflection: This decision showed how risk appetite, budget, and timeline intersect in real-world planning.
+
+🧾 5. Summary of Contributions
+Task	Contributor	Status
+Threat model diagram	Shamma Alshamsi	✅ Completed
+Asset valuation table	Ahmad Alsalami	✅ Completed
+Executive Summary draft	Shamma	✅ Completed
+Peer review & editing	Ahmad	✅ Completed
+🧠 Reflections from the Branch
+
+Cross-functional teamwork is essential in cybersecurity planning.
+
+Peer reviews enriched the quality of the report.
+
+Structured meetings helped reduce delays and reinforced accountability.
+
+🖼️ Visual Example: Meeting Workflow
+graph LR
+A[Team Kick-off] --> B[Task Distribution]
+B --> C[Risk Brainstorming]
+C --> D[Threat Modelling]
+D --> E[Draft Executive Summary]
+E --> F[Peer Review]
+F --> G[Final Submission]
